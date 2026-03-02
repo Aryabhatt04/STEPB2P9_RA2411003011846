@@ -6,3 +6,4 @@ public class PalindromeChecker {
         System.out.println("Application Version: 1.0");
     }
 }
+// this is UC1
