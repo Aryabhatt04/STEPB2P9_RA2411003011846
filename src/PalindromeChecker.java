@@ -5,19 +5,19 @@ public class PalindromeChecker {
         System.out.println("Welcome to the Palindrome Checker Management System");
         System.out.println("Version : 1.0");
         System.out.println("System initialized successfully");
-        String word = "madam";
 
+        String original = "level";
         String reversed = "";
 
-        for (int i = word.length() - 1; i >= 0; i--) {
-            reversed = reversed + word.charAt(i);
+
+        for (int i = original.length() - 1; i >= 0; i--) {
+            reversed = reversed + original.charAt(i);
         }
 
-        System.out.println("Input text :" + word);
-        if (word.equals(reversed)) {
-            System.out.println("Is it a Palindrome? : true");
+        if (original.equals(reversed)) {
+            System.out.println(original + " is a Palindrome.");
         } else {
-            System.out.println("Is it a Palindrome? : false");
+            System.out.println(original + " is NOT a Palindrome.");
         }
     }
 }
